@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>First Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='styles/fonts.css') }}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='styles/login.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Icon.png') }}">
+</head>
+<body>
+    <div class='container'>
+        <img src="{{ url_for('static', filename='YouOnlineInvertedCropped.png') }}">
+        <h1>Welcome!</h1>
+        <p>To provide the best service we are required to have some details!</p>
+        <form name="firstLogin" method="POST" autocomplete="off">
+            <input type="number" name="length" class="no-spinners" placeholder="Your Length in Centimeters" min='100' max="230" required>
+            <br>
+            <input type="number" name="weight" class="no-spinners" placeholder="Your Weigth in Kilos" min='20' max="400" required>
+            <br>
+            <input type="submit" value="Insert!"> 
+        </form>
+    </div>
+</body>
+</html>

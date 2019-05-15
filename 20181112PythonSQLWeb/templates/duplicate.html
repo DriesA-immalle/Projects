@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Duplicate data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='styles/fonts.css') }}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='styles/404.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Icon.png') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='YouOnlineInvertedCropped.png') }}">
+        <h1>Duplicate!</h1>
+        <p>Please insert original data!</p>
+        <button onclick="location.href='/login'">take me back!</button>
+    </div>
+</body>
+</html>
